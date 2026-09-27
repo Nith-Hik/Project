@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Bookstore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-container">
+			<h1>
+				<a href="index.html">Bookstore</a>
+			</h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="catalog.html">Books</a></li>
+					<li><a href="cart.html">Cart</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+
+			<form class="search-form" action="search.html" method="get">
+				<input type="text" name="q" placeholder="Search for books..."
+					aria-label="Search books">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</header>
+
+	<main class="main-container">
+		<section class="hero">
+			<div class="hero-content">
+				<h2>Find the book that you are looking for here</h2>
+				<p>Thousands of titles, delivered right to your doorstep.</p>
+				<a href="catalog.html" class="btn-primary">Browse all books</a>
+			</div>
+		</section>
+
+		<section class="section-container">
+			<h2>Featured Books</h2>
+			<div class="book-grid">
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book1.jpg" alt="Cover of The Great Adventure">
+					</div>
+					<div class="book-info">
+						<h3>The Great Adventure</h3>
+						<p class="author">by Samantha van Riet</p>
+						<p class="price">$12.99</p>
+						<a href="the Great Adventure.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book2.jpg" alt="Cover of Coding for Kids in C++">
+					</div>
+					<div class="book-info">
+						<h3>Coding for Kids in C++</h3>
+						<p class="author">by Bob Mather</p>
+						<p class="price">$12.99</p>
+						<a href="Coding for Kids in C++.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book3.jpg" alt="Cover of A Quiet Garden">
+					</div>
+					<div class="book-info">
+						<h3>A Quiet Garden</h3>
+						<p class="author">by Maria Poet</p>
+						<p class="price">$15.99</p>
+						<a href="A Quiet Garden.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book4.jpg" alt="Cover of Pride and Prejudice">
+					</div>
+					<div class="book-info">
+						<h3>Pride and Prejudice</h3>
+						<p class="author">by Jane Austen</p>
+						<p class="price">$10.99</p>
+						<a href="Pride and Prejudice.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book5.jpg" alt="Cover of The Great Gatsby">
+					</div>
+					<div class="book-info">
+						<h3>The Great Gatsby</h3>
+						<p class="author">by F. Scott Fitzgerald</p>
+						<p class="price">$12.99</p>
+						<a href="book.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section-container">
+			<h2>New Arrival Books</h2>
+			<div class="book-grid">
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book6.jpg" alt="Cover of To Kill a Mockingbird">
+					</div>
+					<div class="book-info">
+						<h3>To Kill a Mockingbird</h3>
+						<p class="author">by Harper Lee</p>
+						<p class="price">$10.99</p>
+						<a href="To Kill a Mockingbird.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book7.jpg" alt="Cover of War and Peace">
+					</div>
+					<div class="book-info">
+						<h3>War and Peace</h3>
+						<p class="author">by Leo Tolstoy</p>
+						<p class="price">$10.99</p>
+						<a href="War and Peace.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section-container category-section">
+			<h2>Browse by Category</h2>
+			<ul class="category-tags">
+				<li><a href="catalog.html?category=fiction">Fiction</a></li>
+				<li><a href="catalog.html?category=non-fiction">Non-Fiction</a></li>
+				<li><a href="catalog.html?category=children">Children</a></li>
+				<li><a href="catalog.html?category=stationery">Stationery
+						&amp; Gifts</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<p>© 2026 Online Bookstore. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+</body>
+</html>

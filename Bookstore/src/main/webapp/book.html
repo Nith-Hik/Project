@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Great Gatsby - Bookstore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-container">
+			<h1>
+				<a href="index.html">Bookstore</a>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalog.html">Books</a></li>
+					<li><a href="cart">Cart</a></li>
+					<li><a href="login">Login</a></li>
+				</ul>
+			</nav>
+			<form class="search-form" action="search.html" method="get">
+				<input type="text" name="q" placeholder="Search for books..."
+					aria-label="Search books">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</header>
+
+	<main class="main-container">
+		<section class="book-detail">
+
+			<div class="book-detail-image">
+				<img src="images/book5.jpg" alt="Cover of The Great Gatsby">
+			</div>
+
+			<div class="book-detail-info">
+				<h2>The Great Gatsby</h2>
+				<p class="author">by F. Scott Fitzgerald</p>
+				<p class="price">$12.99</p>
+
+				<p class="description">A story of wealth, love, and the American
+					Dream in the roaring 1920s, following the mysterious Jay Gatsby and
+					his obsession with the beautiful Daisy Buchanan.</p>
+			</div>
+				<div class="detail-meta">
+					<p>
+						<strong>Category:</strong> Fiction
+					</p>
+					<p>
+						<strong>Pages:</strong> 180
+					</p>
+					<p>
+						<strong>In Stock:</strong> Yes
+					</p>
+				</div>
+
+				<form action="add-to-cart" method="post">
+					<input type="hidden" name="bookId" value="5">
+					<div class="quantity-row">
+						<label for="qty">Quantity:</label> <input type="number" id="qty"
+							name="quantity" value="1" min="1">
+					</div>
+					<button type="submit" class="add-to-cart-btn">Add to Cart</button>
+				</form>
+		</section>
+
+		<section class="section-container">
+			<h2>You Might Also Like</h2>
+			<div class="book-grid">
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book6.jpg" alt="Cover of To Kill a Mockingbird">
+					</div>
+					<div class="book-info">
+						<h3>To Kill a Mockingbird</h3>
+						<p class="author">by Harper Lee</p>
+						<p class="price">$12.99</p>
+						<a href="To Kill a Mockingbird.html" class="btn-detail">View
+							details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book4.jpg" alt="Cover of Pride and Prejudice">
+					</div>
+					<div class="book-info">
+						<h3>Pride and Prejudice</h3>
+						<p class="author">by Jane Austen</p>
+						<p class="price">$10.99</p>
+						<a href="Pride and Prejudice.html" class="btn-detail">View
+							details</a>
+					</div>
+				</article>
+
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book7.jpg" alt="Cover of War and Peace">
+					</div>
+					<div class="book-info">
+						<h3>War and Peace</h3>
+						<p class="author">by Leo Tolstoy</p>
+						<p class="price">$10.99</p>
+						<a href="War and Peace.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<p>&copy; 2026 Online Bookstore. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>War and Peace - Bookstore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-container">
+			<h1>
+				<a href="index.html">Bookstore</a>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalog.html">Books</a></li>
+					<li><a href="cart">Cart</a></li>
+					<li><a href="login">Login</a></li>
+				</ul>
+			</nav>
+			<form class="search-form" action="search.html" method="get">
+				<input type="text" name="q" placeholder="Search for books..."
+					aria-label="Search books">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</header>
+
+	<main class="main-container">
+		<section class="book-detail">
+			<div class="book-detail-image">
+				<img src="images/book7.jpg" alt="Cover of War and Peace">
+			</div>
+			<div class="book-detail-info">
+				<h2>War and Peace</h2>
+				<p class="author">by Leo Tolstoy</p>
+				<p class="price">$10.99</p>
+				<p class="description">War and Peace is a large historical novel
+					set during the Napoleonic Wars. It follows several Russian families
+					and explores love, war, family, society, and the effects of
+					historical events on ordinary people.</p>
+			</div>
+				<div class="detail-meta">
+					<p>
+						<strong>Category:</strong> Fiction
+					</p>
+					<p>
+						<strong>Pages:</strong> 180
+					</p>
+					<p>
+						<strong>In Stock:</strong> Yes
+					</p>
+				</div>
+				<form action="add-to-cart" method="post">
+					<input type="hidden" name="bookId" value="7">
+					<div class="quantity-row">
+						<label for="qty">Quantity:</label> <input type="number" id="qty"
+							name="quantity" value="1" min="1">
+					</div>
+					<button type="submit" class="add-to-cart-btn">Add to Cart</button>
+				</form>
+		</section>
+
+		<section class="section-container">
+			<h2>You Might Also Like</h2>
+			<div class="book-grid">
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book5.jpg" alt="Cover of The Great Gatsby">
+					</div>
+					<div class="book-info">
+						<h3>The Great Gatsby</h3>
+						<p class="author">by F. Scott Fitzgerald</p>
+						<p class="price">$12.99</p>
+						<a href="book.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book1.jpg" alt="Cover of the Great Adventure">
+					</div>
+					<div class="book-info">
+						<h3>The Great Adventure</h3>
+						<p class="author">by Samantha van Riet</p>
+						<p class="price">$12.99</p>
+						<a href="the Great Adventure.html" class="btn-detail">View
+							details</a>
+					</div>
+				</article>
+				<article class="book-card">
+					<div class="book-image-wrapper">
+						<img src="images/book3.jpg" alt="Cover of A Quiet Garden">
+					</div>
+					<div class="book-info">
+						<h3>A Quiet Garden</h3>
+						<p class="author">by Maria Poet</p>
+						<p class="price">$15.99</p>
+						<a href="A Quiet Garden.html" class="btn-detail">View details</a>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<p>&copy; 2026 Online Bookstore. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

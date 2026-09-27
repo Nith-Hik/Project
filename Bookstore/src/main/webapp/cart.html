@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - Bookstore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-container">
+			<h1><a href="index.html">Bookstore</a></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalog.html">Books</a></li>
+					<li><a href="cart.html" class="active">Cart</a></li>
+					<li><a href="login">Login</a></li>
+				</ul>
+			</nav>
+			<form class="search-form" action="search.html" method="get">
+				<input type="text" name="q" placeholder="Search for books..." aria-label="Search books">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</header>
+
+	<main class="main-container">
+		<section class="cart-page">
+			<h2>Your Shopping Cart</h2>
+
+			<div class="cart-layout">
+
+				<div class="cart-items">
+				
+				</div>
+
+				<div class="cart-summary">
+					<h3>Order Summary</h3>
+					<div class="summary-line">
+						<span>Subtotal</span>
+						<span></span>
+					</div>
+					<div class="summary-line">
+						<span>Shipping</span>
+						<span></span>
+					</div>
+					<div class="summary-line total">
+						<span>Total</span>
+						<span></span>
+					</div>
+					<a href="checkout" class="checkout-btn">Proceed to Checkout</a>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<p>&copy; 2026 Online Bookstore. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
