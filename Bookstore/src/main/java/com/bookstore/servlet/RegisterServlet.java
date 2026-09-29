@@ -39,7 +39,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
 
-        User newUser = new User(fullName, email, password);
+        User newUser = new User(fullName, email, password, false);
         UserRepository.add(newUser);
 
         HttpSession session = request.getSession();

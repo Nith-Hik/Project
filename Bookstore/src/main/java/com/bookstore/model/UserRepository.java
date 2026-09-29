@@ -7,6 +7,10 @@ public class UserRepository {
 
     private static final List<User> users = new ArrayList<>();
 
+    static {
+        users.add(new User("Site Admin", "admin@bookstore.com", "admin123", true));
+    }
+
     public static void add(User user) {
         users.add(user);
     }
